@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/songs",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/albums",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/playlist",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    }
+  ]
+}

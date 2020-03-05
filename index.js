@@ -40,11 +40,11 @@ const isValidAlbum = (title, album) => {
 };
 
 app.get("/songs", (req, res) => {
-  res.send(songsData);
+  res.status(200).jsonp(songsData);
 });
 
 app.get("/albums", (req, res) => {
-  res.send(albumsData);
+  res.status(200).jsonp(albumsData);
 });
 
 /*
